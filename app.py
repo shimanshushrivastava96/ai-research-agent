@@ -72,4 +72,4 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
         outputs=[status_output, report_output, pdf_output]
     )
 
-demo.launch()
+demo.launch(server_name="0.0.0.0", server_port=7860)

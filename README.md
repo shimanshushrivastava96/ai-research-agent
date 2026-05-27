@@ -40,7 +40,6 @@ python app.py
 
 ## Environment Variables
 
-Rename `.env.example` to `.env`
 
 ```env
 GEMINI_API_KEY=your_key
