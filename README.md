@@ -49,3 +49,57 @@ TAVILY_API_KEY=your_key
 ## Deployment
 
 Deploy on Hugging Face Spaces using Gradio SDK.
+
+
+## Architecture
+
+                +-------------------+
+                |    User Query     |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |  Planner Agent    |
+                | Creates Research  |
+                | Plan & Subtopics  |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |  Research Agent   |
+                | Fetches Real-Time |
+                | Web Information   |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |    Tavily API     |
+                | Web Search Engine |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |     ChromaDB      |
+                | Vector Memory DB  |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                | Summarizer Agent  |
+                | Generates Final   |
+                | Research Report   |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |   PDF Generator   |
+                | Export Research   |
+                | Report as PDF     |
+                +-------------------+
+                          |
+                          v
+                +-------------------+
+                |    Gradio UI      |
+                | User Interaction  |
+                +-------------------+
+```
