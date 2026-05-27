@@ -1,8 +1,8 @@
-google-generativeai
 gradio
+groq
 tavily-python
-python-dotenv
 chromadb
 sentence-transformers
+python-dotenv
 reportlab
 markdown
