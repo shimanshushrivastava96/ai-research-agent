@@ -1,0 +1,8 @@
+google-generativeai
+gradio
+tavily-python
+python-dotenv
+chromadb
+sentence-transformers
+reportlab
+markdown
